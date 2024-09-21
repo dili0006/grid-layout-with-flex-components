@@ -7,11 +7,16 @@ body {
     border: 1px solid #222;
     border-radius: 8px;
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 1rem;
   }
   
   .emoji h2 {
-    margin: 0;
+    margin-top: 100px;
     border-bottom: 2px solid #ccc;
+    position: absolute;
   }
   
   .emoji a {
@@ -20,8 +25,31 @@ body {
     color: white;
     padding: 1rem;
     border-radius: 8px;
+    height: 20px;
+    position: relative;
   }
+   main {
+    width: 700px;
+   }
   
   .icon {
     font-size: 4rem;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+
+  .emojis {
+    display: grid;
+    position:absolute;
+    grid-template-columns: 17% 17%;
+    grid-template-rows: 1fr 1fr; 
+  }
+
+  p {
+    font-size: medium;
+    position: relative;
+    flex-grow: 1;
+    bottom: 10px;
   }
